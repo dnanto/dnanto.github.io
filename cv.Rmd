@@ -1,0 +1,97 @@
+---
+author: "Daniel Antonio Negrón, PhD"
+geometry: "vmargin=0.75in,hmargin=0.5in"
+header-includes:
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[L]{\large \textbf{Daniel Antonio Negrón, PhD}}
+- \fancyhead[C]{Scientist}
+- \fancyhead[R]{dnegron2@gmu.edu}
+- \fancyfoot[C]{\thepage}
+- \setlength{\headheight}{24pt}
+- \headsep=24pt
+output:
+  pdf_document:
+---
+
+```{r setup, include=F}
+library(dplyr)
+library(stringr)
+```
+
+## Education \dotfill
+
+**George Mason University, School of Systems Biology** \hfill Fairfax, VA \break
+_PhD in Bioinformatics & Computational Biology_ \hfill Aug 2014 – May 2021 \break
+Dissertation: Molecular Clock Analysis of Human Adenovirus \hfill \break
+Chair: Dr. Donald Seto; Co-Chairs: Dr. Patrick Gillevet & Dr. Sterling Thomas \hfill \break
+**Johns Hopkins University, Zanvyl Krieger School of Arts & Sciences** \hfill Baltimore, MD \break
+_MS in Bioinformatics_ \hfill Nov 2009 – Dec 2011 \break
+Capstone: Parallel Algorithm for _de novo_ Co-Expression Networks from Microarray Data \hfill \break
+Adviser: Dr. Thomas Koval; Supervisors: Dr. Sterling Thomas & Dr. Catherine E. Campbell \hfill \break
+**Boston University, College of Arts & Sciences** \hfill Boston, MA \break
+_BA in Biochemistry & Molecular Biology, Minor in Computer Science_ \hfill Sep 2005 – May 2009 \break
+Project: Microsatellite junction counts are inversely proportional to unit size, gap, and edit distance \hfill \break
+Adviser: Dr. Gary Benson \hfill \break
+Project: Type-II superconductor simulator to investigate magnetic vortex formation \hfill \break
+Adviser: Dr. George Ogurek Zimmerman \hfill
+
+## Skills \dotfill
+
+**Biology** \hfill alignment, annotation, homology modeling, molecular diagnostics, network analysis, PCR, phylogenetics \break
+**Computing** \hfill data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI \break
+**Programming** \hfill AWK, BASH, C, C++, C#, GLSL, HTML, Java, JavaScript, jq, JSON, perl, python, XML \break
+**Mathematics** \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
+**Reproducibility** \hfill Conda, Docker, Git, \LaTeX, pip, R Markdown, Snakemake, Spack, Zotero \break
+**Database** \hfill BLAST+, PostgreSQL, SQLite, SQL, ER modeling \break
+**Language** \hfill Spanish (co-native), Japanese (JLPT 5)
+
+## Experience \dotfill
+
+**Noblis, Inc.** \hfill Reston, VA \break
+_Scientist_ \hfill Oct 2011 – Present \break
+Develop algorithms and program applications for the design and evaluation of molecular diagnostics such as PCR/LAMP assays and multiplexed antigen tests for biosurveillance with refinements based on BSL-II experimentation. Consult on interdisciplinary client work across corporate mission areas, internal R&D, grant/proposal/patent submissions. Integrate advanced algorithms, machine learning, and statistics into reproducible and portable scientific workflows to generate publication quality reports. Design and supervise internship projects. Recent and ongoing research projects include laboratory automation combining 3D printing and computer vision, DNA-storage, and AI-directed protein design with RFDiffusion, ProteinMPNN, and AlphaFold. \hfill \break
+_On-Call Technical Intern_ \hfill Aug 2011 – Oct 2011 \break
+Port algorithms to run on the CRAY XMT 2 supercomputer using the C programming language and compiler directives. Analyze _P. aeroginosa_ microarray data to identify virulence factors. \hfill \break
+_Noblis/JHU Independent Research Project Fellowship_ \hfill Jun 2011 – Aug 2011 \break
+Upgrade an algorithm for the analysis of host-pathogen interaction networks from microarray data. Develop an MPI-enabled version for parallel execution. Analyze human-plague (_Y. pestis_) microarray data to identify network motifs. \hfill 
+
+**Infant & Toddler Connection of Fairfax-Falls Church** \hfill Fairfax, VA \break
+_Administrative Assistant II / Data Analyst_ \hfill Sep 2009 – Jun 2011 \break
+Develop VBA macros for use with Microsoft Office applications. Automate administrative tasks using Windows batch scripts. Manage IT support at the Falls Church satellite site. \hfill 
+
+**Boston University** \hfill Boston, MA \break
+_Laboratory for Biocomputing and Informatics_ \hfill Sep 2008 – May 2009 \break
+Conduct research under the supervision of Dr. Gary Benson. Implement algorithms in Java and python for biological data analysis: distance scoring, sequence alignment, and spaced-seed searching. Develop software to analyze genomic microsatellite junctions and trace tandem repeat evolution. \hfill \break
+_Experimental Condensed Matter Physics_ \hfill Sep 2008 – May 2009 \break
+Conduct research under the supervision of Dr. George Ogurek Zimmerman. Program a type-II superconductor simulator to investigate phenomena related to magnetic field vortices in Java and python. Collaborate on the 2D implementation of the simulator and subsequently developed the 3D version. \hfill
+
+## Projects \dotfill
+
+**Capsid Modeling** \hfill \break
+_Render viral capsids using Caspar-Klug Theory_ \hfill May 2020 – Present \break
+In the browser with JavaScript to export SVG diagrams (democapsid @ https://dnanto.github.io/democapsid/app.html). On the GPU with GLSL for realtime renders (protocapsid @ https://www.shadertoy.com/view/dlsGRH).
+
+**District Broomball Statistics** \hfill \break
+_Database and website for league statistics_ \hfill Jun 2019 – Present \break
+Design ER model, SQLite database, and R code for statistics and website generation (https://github.com/dnanto/broomball).
+
+## Publications \dotfill
+
+```{r publications, results='asis', echo=F}
+c("paper", "preprint", "patent", "poster", "presentation") %>%
+  lapply(function(ele) {
+    c(
+      paste0("### ", str_to_title(ele), "s"),
+      RefManageR::ReadBib(file.path("data", "cv", paste0(ele, ".bib"))) %>%
+        print(.opts = list(style = "markdown", sorting = "ydnt", max.names = Inf)) %>%
+        capture.output(),
+      "\n"
+    )
+  }) %>%
+  unlist() %>%
+  str_flatten(collapse = "\n") %>%
+  str_replace_all("D. (A. )?Negrón", "**D. A. Negrón**") %>%
+  str_remove_all("\\s*\\(Visited\\son\\s[0-9]{2}/[0-9]{2}/[0-9]{4}\\)\\.") %>%
+  cat()
+```
