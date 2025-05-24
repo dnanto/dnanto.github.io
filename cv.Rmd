@@ -7,7 +7,8 @@ header-includes:
 - \fancyhead[L]{\large \textbf{Daniel Antonio Negrón, PhD}}
 - \fancyhead[C]{Scientist}
 - \fancyhead[R]{dnegron2@gmu.edu}
-- \fancyfoot[C]{\thepage}
+- \fancyfoot[C]{https://dnanto.github.io/}
+- \fancyfoot[R]{\thepage}
 - \setlength{\headheight}{24pt}
 - \headsep=24pt
 output:
@@ -44,7 +45,7 @@ Adviser: Dr. George Ogurek Zimmerman \hfill
 **Mathematics** \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
 **Reproducibility** \hfill Conda, Docker, Git, \LaTeX, pip, R Markdown, Snakemake, Spack, Zotero \break
 **Database** \hfill BLAST+, PostgreSQL, SQLite, SQL, ER modeling \break
-**Language** \hfill Spanish (co-native), Japanese (JLPT 5)
+**Language** \hfill Spanish (native), Japanese (JLPT 5)
 
 ## Experience \dotfill
 
