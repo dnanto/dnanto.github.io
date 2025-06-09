@@ -39,12 +39,12 @@ Adviser: Dr. George Ogurek Zimmerman \hfill
 
 ## Skills \dotfill
 
-**Biology** \hfill alignment, annotation, homology modeling, molecular diagnostics, pathway analysis, PCR, phylogenetics \break
+**Biology** \hfill alignment, annotation, homology modeling, microarrays, omics, sequencing, PCR/LAMP, phylogenetics \break
 **Computing** \hfill data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI \break
 **Programming** \hfill AWK, BASH, C, C++, C#, GLSL, HTML, Java, JavaScript, jq, JSON, perl, python, XML \break
 **Mathematics** \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
 **Reproducibility** \hfill Conda, Docker, Git, \LaTeX, pip, R Markdown, Snakemake, Spack, Zotero \break
-**Database** \hfill BLAST+, PostgreSQL, SQLite, SQL, ER modeling \break
+**Database** \hfill BLAST+, ER modeling, PostgreSQL, SQL, SQLite \break
 **Language** \hfill Spanish (native), Japanese (JLPT 5)
 
 ## Experience \dotfill
