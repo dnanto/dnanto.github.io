@@ -1,18 +1,18 @@
 ---
 author: "Daniel Antonio Negrón, PhD"
-geometry: "vmargin=0.75in,hmargin=0.5in"
+geometry: vmargin=0.75in,hmargin=0.5in
 header-includes:
 - \usepackage{fancyhdr}
+- \usepackage{framed}
 - \pagestyle{fancy}
 - \fancyhead[L]{\large \textbf{Daniel Antonio Negrón, PhD}}
 - \fancyhead[C]{Scientist}
 - \fancyhead[R]{dnegron2@gmu.edu}
-- \fancyfoot[C]{https://dnanto.github.io/}
 - \fancyfoot[R]{\thepage}
 - \setlength{\headheight}{24pt}
 - \headsep=24pt
-output:
-  pdf_document:
+- \fancyfoot[C]{https://dnanto.github.io/}
+output: pdf_document
 ---
 
 ```{r setup, include=F}
@@ -22,76 +22,116 @@ library(stringr)
 
 ## Education \dotfill
 
-**George Mason University, School of Systems Biology** \hfill Fairfax, VA \break
-_PhD in Bioinformatics & Computational Biology_ \hfill Aug 2014 – May 2021 \break
+\begin{oframed}
+\textbf{George Mason University, School of Systems Biology} \hfill Fairfax, VA
+\begin{leftbar}
+\textit{PhD in Bioinformatics \& Computational Biology} \hfill Aug 2014 – May 2021 \break
 Dissertation: Molecular Clock Analysis of Human Adenovirus \hfill \break
-Chair: Dr. Donald Seto; Co-Chairs: Dr. Patrick Gillevet & Dr. Sterling Thomas \hfill \break
-**Johns Hopkins University, Zanvyl Krieger School of Arts & Sciences** \hfill Baltimore, MD \break
-_MS in Bioinformatics_ \hfill Nov 2009 – Dec 2011 \break
-Capstone: Parallel Algorithm for _de novo_ Co-Expression Networks from Microarray Data \hfill \break
-Adviser: Dr. Thomas Koval; Supervisors: Dr. Sterling Thomas & Dr. Catherine E. Campbell \hfill \break
-**Boston University, College of Arts & Sciences** \hfill Boston, MA \break
-_BA in Biochemistry & Molecular Biology, Minor in Computer Science_ \hfill Sep 2005 – May 2009 \break
+Chair: Dr. Donald Seto; Co-Chairs: Dr. Patrick Gillevet \& Dr. Sterling Thomas \hfill
+\end{leftbar}
+
+\textbf{Johns Hopkins University, Zanvyl Krieger School of Arts \& Sciences} \hfill Baltimore, MD
+\begin{leftbar}
+\textit{MS in Bioinformatics} \hfill Nov 2009 – Dec 2011 \break
+Capstone: Parallel Algorithm for \textit{de novo} Co-Expression Networks from Microarray Data \hfill \break
+Adviser: Dr. Thomas Koval; Supervisors: Dr. Sterling Thomas \& Dr. Catherine E. Campbell \hfill
+\end{leftbar}
+
+\textbf{Boston University, College of Arts \& Sciences} \hfill Boston, MA
+\begin{leftbar}
+\textit{BA in Biochemistry \& Molecular Biology, Minor in Computer Science} \hfill Sep 2005 – May 2009 \break
 Project: Microsatellite junction counts are inversely proportional to unit size, gap, and edit distance \hfill \break
 Adviser: Dr. Gary Benson \hfill \break
 Project: Type-II superconductor simulator for magnetic vortex formation \hfill \break
 Adviser: Dr. George Ogurek Zimmerman \hfill
+\end{leftbar}
+\end{oframed}
 
 ## Skills \dotfill
 
-**Biology** \hfill alignment, annotation, homology modeling, microarrays, omics, sequencing, PCR/LAMP, phylogenetics \break
-**Computing** \hfill data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI \break
-**Programming** \hfill AWK, BASH, C, C++, C#, GLSL, HTML, Java, JavaScript, jq, JSON, perl, python, XML \break
-**Mathematics** \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
-**Reproducibility** \hfill Conda, Docker, Git, \LaTeX, pip, R Markdown, Snakemake, Spack, Zotero \break
-**Database** \hfill BLAST+, ER modeling, PostgreSQL, SQL, SQLite \break
-**Language** \hfill Spanish (native), Japanese (JLPT 5)
+\begin{oframed}
+\textbf{Biology} \hfill alignment, annotation, homology modeling, microarrays, omics, sequencing, PCR/LAMP, phylogenetics \break
+\textbf{Computing} \hfill data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI \break
+\textbf{Programming} \hfill AWK, BASH, C, C++, C\#, GLSL, HTML, Java, JavaScript, jq, JSON, perl, python, XML \break
+\textbf{Mathematics} \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
+\textbf{Reproducibility} \hfill Conda, Docker, Git, \LaTeX, pip, R Markdown, Snakemake, Spack, Zotero \break
+\textbf{Database} \hfill BLAST+, ER modeling, PostgreSQL, SQL, SQLite \break
+\textbf{Language} \hfill Spanish (native), Japanese (JLPT 5)
+\end{oframed}
 
 ## Experience \dotfill
 
-**Noblis, Inc.** \hfill Reston, VA \break
-_Scientist_ \hfill Oct 2011 – Present \break
-Develop algorithms and program applications for the design and evaluation of molecular diagnostics such as PCR/LAMP assays and multiplexed antigen tests for biosurveillance with refinements based on BSL-II experimentation. Consult on interdisciplinary client work across corporate mission areas, internal R&D, and grant/proposal/patent submissions. Integrate advanced algorithms, machine learning, and statistics into reproducible and portable scientific workflows to generate publication quality reports. Design and supervise internship projects. \hfill \break
-Recent and ongoing research projects include a 3D-printed robot arm with computer vision for wet lab automation tasks (as PI), DNA-storage algorithm development (with patent submitted and experiment planned for the ISS), and AI-directed protein design with RFDiffusion, ProteinMPNN, AlphaFold, and laboratory validation. \hfill \break
-As a cross-disciplinary scientist, past projects included microarray analysis, full-stack laboratory information management system (LIMS) development, expert system for well water remediation, stock trade automation, traffic congestion prediction, dark web social network analysis, statistical fingerprinting of nuclear fuel rods, forensic reverse-engineering of file formats, containerized computer virus scanning frameworks (as PI), and efficient language detection. \hfill \break
-_On-Call Technical Intern_ \hfill Aug 2011 – Oct 2011 \break
-Port algorithms to run on the CRAY XMT 2 supercomputer using the C programming language and compiler directives. Analyze _P. aeroginosa_ microarray data to identify virulence factors. \hfill \break
-_Noblis/JHU Independent Research Project Fellowship_ \hfill Jun 2011 – Aug 2011 \break
-Upgrade an algorithm for the analysis of host-pathogen interaction networks from microarray data. Develop an MPI-enabled version for parallel execution. Analyze human-plague (_Y. pestis_) microarray data to identify network motifs. \hfill
+\begin{oframed}
+\textbf{Noblis, Inc.} \hfill Reston, VA
+\begin{leftbar}
+\textit{Scientist} \hfill Oct 2011 – Present \break
+Develop algorithms and program applications for the design and evaluation of molecular diagnostics such as PCR/LAMP assays and multiplexed antigen tests for biosurveillance with refinements based on BSL-II experimentation. Analyze laboratory data for microbial based food and fuel production. Consult on interdisciplinary client work across corporate mission areas, internal R\&D, and grant/proposal/patent submissions. Integrate advanced algorithms, machine learning, and statistics into reproducible and portable scientific workflows to generate publication quality reports. Design and supervise internship projects. \hfill \break
+Recent and ongoing research projects include a phone app to interpret colorimetric LAMP assay and lateral flow immunoassay results using OpenCV, 3D-printed robot arm with computer vision for wet lab task automation (as PI), DNA-storage algorithm development (with patent submitted and experiment planned for the ISS), and AI-directed protein design with RFDiffusion, ProteinMPNN, AlphaFold, and laboratory validation. \hfill \break
+As a cross-disciplinary scientist, past projects included microarray analysis, full-stack laboratory information management system (LIMS) development, expert system for well water remediation, stock trade automation, traffic congestion prediction, dark web social network analysis, statistical fingerprinting of nuclear fuel rods, forensic reverse-engineering of file formats, containerized computer virus scanning microservice frameworks (as PI), and efficient language detection on low-energy hardware. \hfill
+\end{leftbar}
+\begin{leftbar}
+\textit{On-Call Technical Intern} \hfill Aug 2011 – Oct 2011 \break
+Port algorithms to run on the CRAY XMT 2 supercomputer using the C programming language and compiler directives. Analyze \textit{P. aeruginosa} microarray data to identify virulence factors. Also analyzed protein microarray data of hemorrhagic fever viruses from the BSL-III laboratory data from GMU. \hfill
+\end{leftbar}
+\begin{leftbar}
+\textit{Noblis/JHU Independent Research Project Fellowship} \hfill Jun 2011 – Aug 2011 \break
+Upgrade an algorithm for the analysis of host-pathogen interaction networks from microarray data. Develop an MPI-enabled version for parallel execution. Analyze human-plague (\textit{Y. pestis}) microarray data to identify network motifs. \hfill
+\end{leftbar}
 
-**Infant & Toddler Connection of Fairfax-Falls Church** \hfill Fairfax, VA \break
-_Administrative Assistant II / Data Analyst_ \hfill Sep 2009 – Jun 2011 \break
+\textbf{Infant \& Toddler Connection of Fairfax-Falls Church} \hfill Fairfax, VA
+\begin{leftbar}
+\textit{Administrative Assistant II / Data Analyst} \hfill Sep 2009 – Jun 2011 \break
 Develop VBA macros for use with Microsoft Office applications. Automate administrative tasks using Windows batch scripts. Manage IT support at the Falls Church satellite site. \hfill
+\end{leftbar}
 
-**Boston University** \hfill Boston, MA \break
-_Laboratory for Biocomputing and Informatics_ \hfill Sep 2008 – May 2009 \break
+\textbf{Boston University} \hfill Boston, MA
+\begin{leftbar}
+\textit{Laboratory for Biocomputing and Informatics} \hfill Sep 2008 – May 2009 \break
 Conduct research under the supervision of Dr. Gary Benson. Implement algorithms in Java and python using distance scoring, sequence alignment, and spaced-seed searching to analyze microsatellite junctions and tandem repeat evolution. \hfill \break
-_Experimental Condensed Matter Physics_ \hfill Sep 2008 – May 2009 \break
+\textit{Experimental Condensed Matter Physics} \hfill Sep 2008 – May 2009 \break
 Conduct research under the supervision of Dr. George Ogurek Zimmerman. Program a type-II superconductor simulator to visualize phenomena related to magnetic field vortices in Java and python. Collaborate on the 2D implementation of the simulator and subsequently developed the 3D version. \hfill
+\end{leftbar}
+\end{oframed}
 
 ## Awards \dotfill
 
-**Noblis, Inc.** \hfill Reston, VA \break
-_Noblis Award for Excellence in Science and Technology_ \hfill 2023 \break
-For outstanding thought leadership and scientific contributions that advance and solve complex challenges on missions ranging from biodefense to cyber defense. \hfill \break
-_Board of Trustees' Award for Excellence_ \hfill 2021 \break
-For contributions to the Northern Virginia Innovation Exchange (NVIX). \hfill \break
-_Noblis Hackathon Honorable Mention_ \hfill 2017 \break
+\begin{oframed}
+\textbf{Noblis, Inc.} \hfill Reston, VA
+\begin{leftbar}
+\textit{Noblis Award for Excellence in Science and Technology} \hfill 2023 \break
+For outstanding thought leadership and scientific contributions that advance and solve complex challenges on missions ranging from biodefense to cyber defense. \hfill
+\end{leftbar}
+\begin{leftbar}
+\textit{Board of Trustees' Award for Excellence} \hfill 2021 \break
+For contributions to the Northern Virginia Innovation Exchange (NVIX). \hfill
+\end{leftbar}
+\begin{leftbar}
+\textit{Noblis Hackathon Honorable Mention} \hfill 2017  \break
 Participated as part of team "Ghost in the Shell Script" in the 24-hr hackathon to improve the search algorithm of the RASMAS medical recall system. The Java solution employed an n-gram indexing strategy for calculating Jaccard similarity. \hfill
+\end{leftbar}
+\end{oframed}
 
 ## Projects \dotfill
 
-**Homebrewing** \hfill \break
-_Makgeolli_ \hfill Jan 2023 - Present \break
+\begin{oframed}
+\textbf{Homebrewing} \hfill
+\begin{leftbar}
+\textit{Makgeolli} \hfill Jan 2023 - Present \break
 Brew traditional Korean rice wine. Developed an Arduino fermentation monitoring system combining an optoisolator and digital scale to track airlock bubble evolution and mass change over time and write logs to an SD card. Received funds from the Noblis Sponsored Research program to sequence samples and develop LAMP assays for microbes critical to the multiple parallel fermentation process. Results were presented as a talk at ASM 2024 in Atlanta, GA. \hfill
+\end{leftbar}
 
-**Capsid Modeling** \hfill \break
-_Render viral capsids using Caspar-Klug Theory_ \hfill May 2020 – Present \break
+\textbf{Capsid Modeling} \hfill
+\begin{leftbar}
+\textit{Render viral capsids using Caspar-Klug Theory} \hfill May 2020 – Present \break
 In the browser with JavaScript to export SVG diagrams (democapsid @ https://dnanto.github.io/democapsid/app.html). On the GPU with GLSL for realtime renders (protocapsid @ https://www.shadertoy.com/view/dlsGRH). \hfill
+\end{leftbar}
 
-**District Broomball Statistics** \hfill \break
-_Database and website for league statistics_ \hfill Jun 2019 – Present \break
-Design ER model, SQLite database, and R code for statistics and website generation (https://github.com/dnanto/broomball). \hfill
+\textbf{District Broomball Statistics} \hfill
+\begin{leftbar}
+\textit{Database and website for league statistics} \hfill Jun 2019 – Present \break
+Design ER model, SQLite database, and R code with novel assist network visualizations for league statistics and website generation (https://github.com/dnanto/broomball). \hfill
+\end{leftbar}
+\end{oframed}
 
 ## Publications \dotfill
 
@@ -100,15 +140,18 @@ c("paper", "preprint", "patent", "poster", "presentation") %>%
   lapply(function(ele) {
     c(
       paste0("### ", str_to_title(ele), "s"),
+      "\\begin{oframed}",
       RefManageR::ReadBib(file.path("data", "cv", paste0(ele, ".bib"))) %>%
         print(.opts = list(style = "markdown", sorting = "ydnt", max.names = Inf)) %>%
         capture.output(),
+      "\\end{oframed}",
       "\n"
     )
   }) %>%
   unlist() %>%
   str_flatten(collapse = "\n") %>%
-  str_replace_all("D. (A. )?Negrón", "**D. A. Negrón**") %>%
+  str_replace_all("D. (A. )?Negrón", "\\\\textbf{D. A. Negrón}") %>%
+  str_replace_all("_([^_]*)_", "\\\\textit{\\1}") %>%
   str_remove_all("\\s*\\(Visited\\son\\s[0-9]{2}/[0-9]{2}/[0-9]{4}\\)\\.") %>%
   cat()
 ```
