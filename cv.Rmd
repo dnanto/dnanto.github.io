@@ -153,5 +153,6 @@ c("paper", "preprint", "patent", "poster", "presentation") %>%
   str_replace_all("D. (A. )?Negrón", "\\\\textbf{D. A. Negrón}") %>%
   str_replace_all("_([^_]*)_", "\\\\textit{\\1}") %>%
   str_remove_all("\\s*\\(Visited\\son\\s[0-9]{2}/[0-9]{2}/[0-9]{4}\\)\\.") %>%
+  str_replace_all("\\[(.*)\\]\\((.*)\\)", "\\\\href{\\2}{\\1}") %>%
   cat()
 ```
