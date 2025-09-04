@@ -4,6 +4,7 @@ geometry: vmargin=0.75in,hmargin=0.5in
 header-includes:
 - \usepackage{fancyhdr}
 - \usepackage{framed}
+- \usepackage{pmboxdraw}
 - \pagestyle{fancy}
 - \fancyhead[L]{\large \textbf{Daniel Antonio Negrón, PhD}}
 - \fancyhead[C]{Scientist}
@@ -19,6 +20,20 @@ output: pdf_document
 library(dplyr)
 library(stringr)
 ```
+
+`> Multidisciplinary scientist and polyglot programmer solving problems in academia and industry. _`
+
+## Skills \dotfill
+
+\begin{oframed}
+\textbf{Biology} \hfill alignment, annotation, homology modeling, microarrays, omics, sequencing, PCR/LAMP, phylogenetics \break
+\textbf{Database} \hfill BLAST+, Cypher, ER modeling, Gremlin, MySQL, PostgreSQL, SQL, SQLite, SPARQL, triplestore \break
+\textbf{Computing} \hfill cloud, compression, data structures, GPU, HPC, microcontrollers, numerical, parallel, threading, UI \break
+\textbf{Reproducibility} \hfill Conda, Docker, Git, \LaTeX, pip, poetry, Podman, R Markdown, Snakemake, Spack, uv, Zotero \break
+\textbf{Programming} \hfill AWK, BASH, C, C++, C\#, CUDA, GLSL, HTML, Java, JavaScript, jq, perl, node, python \break
+\textbf{Mathematics} \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
+\textbf{Language} \hfill Spanish (co-native), Japanese (JLPT 5)
+\end{oframed}
 
 ## Education \dotfill
 
@@ -47,27 +62,15 @@ Adviser: Dr. George Ogurek Zimmerman \hfill
 \end{leftbar}
 \end{oframed}
 
-## Skills \dotfill
-
-\begin{oframed}
-\textbf{Biology} \hfill alignment, annotation, homology modeling, microarrays, omics, sequencing, PCR/LAMP, phylogenetics \break
-\textbf{Computing} \hfill data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI \break
-\textbf{Programming} \hfill AWK, BASH, C, C++, C\#, CUDA, GLSL, HTML, Java, JavaScript, jq, JSON, perl, python, XML \break
-\textbf{Mathematics} \hfill calculus, geometry, linear algebra, MCMC, ML, signed-distance functions, statistics \break
-\textbf{Reproducibility} \hfill Conda, Docker, Git, \LaTeX, pip, R Markdown, Snakemake, Spack, Zotero \break
-\textbf{Database} \hfill BLAST+, ER modeling, PostgreSQL, SQL, SQLite \break
-\textbf{Language} \hfill Spanish (co-native), Japanese (JLPT 5)
-\end{oframed}
-
 ## Experience \dotfill
 
 \begin{oframed}
 \textbf{Noblis, Inc.} \hfill Reston, VA
 \begin{leftbar}
 \textit{Scientist} \hfill Oct 2011 – Present \break
-Develop algorithms and program applications for the design and evaluation of molecular diagnostics such as PCR/LAMP assays and multiplexed antigen tests for biosurveillance with refinements based on BSL-II experimentation. Analyze laboratory data for microbial based food and fuel production. Consult on interdisciplinary client work across corporate mission areas, internal R\&D, and grant/proposal/patent submissions. Integrate advanced algorithms, machine learning, and statistics into reproducible and portable scientific workflows to generate publication quality reports. Design and supervise internship projects. \hfill \break
+Develop algorithms and program applications for the design and evaluation of molecular diagnostics such as PCR/LAMP assays and multiplexed antigen tests for biosurveillance with refinements based on BSL-II experimentation, primarily supporting DTRA. Analyze laboratory data for microbial based food and fuel production. Consult on interdisciplinary client work across corporate mission areas, internal R\&D, and grant/proposal/patent submissions. Integrate advanced algorithms, machine learning, and statistics into reproducible and portable scientific workflows to generate publication quality reports. Design and supervise internship projects. \hfill \break
 Recent and ongoing research projects include a phone app to interpret colorimetric LAMP assay and lateral flow immunoassay results using OpenCV, 3D-printed robot arm with computer vision for wet lab task automation (as PI), DNA-storage algorithm development (with patent submitted and experiment sent to the International Space Station via NASA's SpaceX 33rd Commercial Resupply Service), and AI-directed protein design with RFDiffusion, ProteinMPNN, AlphaFold, and laboratory validation. \hfill \break
-As a cross-disciplinary scientist, past projects included microarray analysis, full-stack laboratory information management system (LIMS) development, expert system for well water remediation, stock trade automation, traffic congestion prediction, dark web social network analysis, statistical fingerprinting of nuclear fuel rods, forensic reverse-engineering of file formats, containerized computer virus scanning microservice frameworks (as PI), and efficient language detection on low-energy hardware. \hfill
+As a cross-disciplinary scientist, past projects included microarray analysis, full-stack laboratory information management system (LIMS) development, expert system for well water remediation, stock trade automation with graph-based correlation strategy, traffic congestion prediction, dark web social network analysis (supporting INTERPOL), statistical fingerprinting of nuclear fuel rods, forensic reverse-engineering of file formats, containerized computer virus scanning microservice frameworks (as PI), and efficient language detection on low-energy hardware. \hfill
 \end{leftbar}
 \begin{leftbar}
 \textit{On-Call Technical Intern} \hfill Aug 2011 – Oct 2011 \break
